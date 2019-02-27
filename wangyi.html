@@ -12,16 +12,36 @@
     p1 {
      font-family: 楷体;
       }
+    [title=百度一下]{
+     border:5px solid rgb(255, 0, 106);
+
+     input[type="text"]
+     {
+      width: 150px;
+      display:block;
+      margin-bottom:10px;
+      background-color:yellow;
+      font-family: Verdana, Arial;
+}     }
       </style>
 </head>
     <body>
         <h1>网页跳转</h1>
         <iframe src="example/html/demo_iframe.html"name="iframe_a"></iframe> 
         <p>
-            <a href="https://www.baidu.com/"target="iframe_a">百度一下</a>
+            <a title="百度一下" href="https://www.baidu.com/"target="iframe_a">百度一下</a>
         </p>
+
+        <form name="input" action="" method="get">
+            <input type="text" name="Name" value="wang" size="20">
+            <br />
+            <input type="text" name="Name" value="yi" size="24">
+        </form>
+
         <p1><b>注释：</b>
             链接目标匹配iframe的名称，<br/>所以链接会在iframe中打开
         </p1>
+        <br />
+        <p2>www.wangyetiaozhuan.com</p2>
        </body>
 </html>
